@@ -1,0 +1,21 @@
+<footer id="footer" class="panel">
+    <div class="inner split">
+        <div>
+            <section>
+                <h2>关于</h2>
+                <p><%- themeConfig.siteDescription %></p>
+            </section>
+            <section>
+                <h2>求订阅我的...</h2>
+                <ul class="icons">
+                    <% ['github', 'twitter', 'weibo', 'zhihu', 'facebook'].forEach((item) => { %>
+                        <% if (site.customConfig[item]) { %>
+                            <li><a href="<%= site.customConfig[item] %>" class="icon brands fa-<%= item %>"><span class="label">Twitter</span></a></li>
+                        <% } %>
+                    <% }) %>
+                </ul>
+            </section>
+            <p class="copyright"><%- themeConfig.footerInfo %></p>
+        </div>
+    </div>
+</footer>

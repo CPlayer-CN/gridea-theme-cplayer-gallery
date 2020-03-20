@@ -1,0 +1,14 @@
+<header id="header">
+    <h1><strong><%= themeConfig.siteName %></strong> 由 <a href="https://html5up.net">HTML5 UP</a> 设计样式。</h1>
+    <nav>
+        <ul>
+            <% if (pagination.prev) { %>
+                <li><a href="<%= pagination.prev %>" class="icon solid fa-angle-left"></a></li>
+            <% } %>
+            <% if (pagination.next) { %>
+                <li><a href="<%= pagination.next %>" class="icon solid fa-angle-right"></a></li>
+            <% } %>
+            <li><a href="#footer" class="icon solid fa-info-circle">关于</a></li>
+        </ul>
+    </nav>
+</header>

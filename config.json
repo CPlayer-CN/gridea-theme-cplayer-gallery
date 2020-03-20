@@ -1,0 +1,69 @@
+{
+  "name": "Gallery",
+  "version": "0.0.2",
+  "author": "CPlayer",
+  "customConfig": [
+    {
+      "name": "github",
+      "label": "Github",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "twitter",
+      "label": "Twitter",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "weibo",
+      "label": "微博",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "zhihu",
+      "label": "知乎",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "facebook",
+      "label": "Facebook",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "ga",
+      "label": "跟踪 ID",
+      "group": "谷歌统计",
+      "value": "",
+      "type": "input",
+      "note": "UA-xxxxxxxxx-x"
+    },
+    {
+      "name": "metaKeywords",
+      "label": "Meta Keywords",
+      "group": "SEO",
+      "value": "相册, Gallery",
+      "type": "input"
+    },
+    {
+      "name": "metaDescription",
+      "label": "Meta Description",
+      "group": "SEO",
+      "value": "一款基于 HTML5 UP 的 Multiverse 模板开发的， Gridea 主题的预览页面。",
+      "type": "input"
+    }
+  ]
+}

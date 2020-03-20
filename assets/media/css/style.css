@@ -1,0 +1,6 @@
+.icon {
+    line-height: initial;
+}
+#header nav > ul > li a.active {
+    background-color: unset;
+}
