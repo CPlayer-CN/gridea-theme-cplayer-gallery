@@ -1,6 +1,4 @@
 .icon {
-    line-height: initial;
-}
-#header nav > ul > li a.active {
-    background-color: unset;
+    vertical-align: middle;
+    transform: translateY(-.1em);
 }
