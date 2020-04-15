@@ -4,6 +4,23 @@
   "author": "CPlayer",
   "customConfig": [
     {
+      "name": "scheme",
+      "label": "外观",
+      "group": "布局",
+      "value": "multiverse",
+      "type": "radio",
+      "options": [
+        {
+          "label": "multiverse 多次元",
+          "value": "multiverse"
+        },
+        {
+          "label": "lens 棱镜",
+          "value": "lens"
+        }
+      ]
+    },
+    {
       "name": "github",
       "label": "Github",
       "group": "社交",

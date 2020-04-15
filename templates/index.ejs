@@ -1,3 +1,4 @@
+<% let scheme = site.customConfig.scheme; %>
 <!DOCTYPE HTML>
 <!--
 	Multiverse by HTML5 UP
@@ -8,10 +9,10 @@
 <head>
     <%- include('includes/head', { siteTitle: themeConfig.siteName }) %>
 </head>
-<body class="is-preload">
+<body <% if (scheme === 'lens') {%>class="is-preload-0 is-preload-1 is-preload-2"<% } else {%>class="is-preload"<% } %>>
 
 <!-- 外封 -->
-<div id="wrapper">
+<div <% if (scheme === 'lens') {%>id="main"<% } else {%>id="wrapper"<% } %>>
 
     <!-- 页眉 -->
     <%- include('includes/header') %>
@@ -26,12 +27,19 @@
 
 
 <!-- 脚本 -->
+<% if (scheme === 'lens') {%>
+<script src="media/scripts/jquery.min.js"></script>
+<script src="media/scripts/browser.min.js"></script>
+<script src="media/scripts/breakpoints.min.js"></script>
+<script src="media/scripts/main-lens.js"></script>
+<% } else {%>
 <script src="media/scripts/jquery.min.js"></script>
 <script src="media/scripts/jquery.poptrox.min.js"></script>
 <script src="media/scripts/browser.min.js"></script>
 <script src="media/scripts/breakpoints.min.js"></script>
-<script src="media/scripts/util.js"></script>
-<script src="media/scripts/main.js"></script>
+<script src="media/scripts/util-multiverse.js"></script>
+<script src="media/scripts/main-multiverse.js"></script>
+<% } %>
 
 </body>
 </html>

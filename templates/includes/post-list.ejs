@@ -1,11 +1,25 @@
+<% if (site.customConfig.scheme === 'lens') {%>
+<section id="thumbnails">
+    <% posts.forEach(function(post) { %>
+        <article>
+        <% if (post.feature) { %>
+        <a class="thumbnail" href="<%= post.feature %>"><img src="<%= post.feature %>" alt="" /></a>
+        <% } %>
+        <h2><%= post.title %></h2>
+        <%- post.content %>
+    </article>
+    <% }); %>
+</section>
+<% } else {%>
 <main id="main">
     <% posts.forEach(function(post) { %>
-        <article class="thumb">
-            <% if (post.feature) { %>
-                <a href="<%= post.feature %>" class="image"><img src="<%= post.feature %>" /></a>
-            <% } %>
-            <h2><%= post.title %></h2>
-            <%- post.content %>
-        </article>
+    <article class="thumb">
+        <% if (post.feature) { %>
+            <a href="<%= post.feature %>" class="image"><img src="<%= post.feature %>" /></a>
+        <% } %>
+        <h2><%= post.title %></h2>
+        <%- post.content %>
+    </article>
     <% }); %>
 </main>
+<% } %>

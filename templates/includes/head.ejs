@@ -5,9 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <base href="<%= themeConfig.domain %>/">
 <link rel="shortcut icon" href="favicon.ico" />
-<link rel="stylesheet" href="media/css/main.css" />
-<link rel="stylesheet" href="media/css/style.css" />
-<noscript><link rel="stylesheet" href="media/css/noscript.css" /></noscript>
+<% if (site.customConfig.scheme === 'lens') {%>
+<link rel="stylesheet" href="media/css/main-lens.css" />
+<noscript><link rel="stylesheet" href="media/css/noscript-lens.css" /></noscript>
+<% } else {%>
+<link rel="stylesheet" href="media/css/main-multiverse.css" />
+<link rel="stylesheet" href="media/css/modify-multiverse.css" />
+<noscript><link rel="stylesheet" href="media/css/noscript-multiverse.css" /></noscript>
+<% } %>
 
 <% if (site.customConfig.ga) { %>
 <script async src="https://www.googletagmanager.com/gtag/js?id=<%= site.customConfig.ga %>"></script>

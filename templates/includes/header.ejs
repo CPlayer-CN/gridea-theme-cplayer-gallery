@@ -1,4 +1,15 @@
 <header id="header">
+    <% let scheme = site.customConfig.scheme; %><% if (scheme === 'lens') {%>
+    <h1><%= themeConfig.siteName %></h1>
+    <p><%- themeConfig.siteDescription %></p>
+    <ul class="icons">
+        <% ['github', 'twitter', 'weibo', 'zhihu', 'facebook'].forEach((item) => { %>
+            <% if (site.customConfig[item]) { %>
+            <li><a href="<%= site.customConfig[item] %>" class="icon brands fa-<%= item %>"><span class="label"><%= item %></span></a></li>
+            <% } %>
+        <% }) %>
+    </ul>
+    <% } else {%>
     <h1><strong><%= themeConfig.siteName %></strong> 由 <a href="https://html5up.net">HTML5 UP</a> 设计样式。</h1>
     <nav>
         <ul>
@@ -11,4 +22,5 @@
             <li><a href="#footer" class="icon solid fa-info-circle">关于</a></li>
         </ul>
     </nav>
+    <% } %>
 </header>
