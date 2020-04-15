@@ -8,3 +8,5 @@
 - [getgridea / gridea-theme-starter](https://github.com/getgridea/gridea-theme-starter)
 - [wclk / time](https://github.com/wclk/time)
 - [getgridea / gridea-theme-notes](https://github.com/getgridea/gridea-theme-notes)
+- [hsxyhao / gridea-theme-next](https://github.com/hsxyhao/gridea-theme-next)
+- [HTML5 UP / Lens](https://html5up.net/lens)
