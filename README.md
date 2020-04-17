@@ -4,7 +4,7 @@
 一款基于 HTML5 UP 的 Multiverse 与 Lens 模板开发的， Gridea 主题。
 
 # 特色
-- 同时兼容 Multiverse 与 Lens 模板，在设置中即可修改。
+- 同时兼容 Multiverse(多次元) 与 Lens(棱镜) 模板，在设置中即可修改。
 
 # 参考
 - [HTML5 UP / Multiverse](https://html5up.net/multiverse)
