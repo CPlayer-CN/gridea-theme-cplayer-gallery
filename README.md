@@ -1,7 +1,10 @@
 ![Preview](https://raw.githubusercontent.com/CPlayer-CN/gridea-theme-cplayer-gallery/master/Preview.png)
 
 # 介绍
-一款基于 HTML5 UP 的 Multiverse 模板开发的， Gridea 主题。
+一款基于 HTML5 UP 的 Multiverse 与 Lens 模板开发的， Gridea 主题。
+
+# 特色
+- 同时兼容 Multiverse 与 Lens 模板，在设置中即可修改。
 
 # 参考
 - [HTML5 UP / Multiverse](https://html5up.net/multiverse)
